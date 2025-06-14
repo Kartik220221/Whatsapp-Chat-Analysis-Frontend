@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL:"https://whatsapp-chat-analysis-backend.onrender.com",
+    baseURL:import.meta.env.VITE_BACKEND_URL ,
     withCredentials:true,
 })
